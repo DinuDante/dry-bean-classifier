@@ -24,6 +24,8 @@ StandardScaler is fitted inside the training pipeline for Logistic Regression, K
 
 [GitHub repository](https://github.com/DinuDante/dry-bean-classifier)
 
+[Live Streamlit app](https://dinudante-dry-bean-classifier.streamlit.app)
+
 ## d. Models used
 
 Fixed settings were chosen before evaluation; no test-set hyperparameter search was performed.
@@ -65,7 +67,7 @@ Use Python 3.12. Install requirements.txt, run train.py to reproduce training, a
 
 The uploaded CSV must contain exactly the 16 feature columns and Class, numeric finite inputs, and known uppercase labels. Column order may vary. Upload only test data (up to 5,000 rows / 5 MiB). If a class is absent, seven-class AUC is displayed as N/A; macro metrics still include all seven labels. The bundled test set contains every class.
 
-Detailed local, BITS Lab and Community Cloud steps are in RUN_GUIDE.md. The recorded execution context is local; a local run is not BITS Lab evidence.
+Detailed local, BITS Lab and Community Cloud steps are in RUN_GUIDE.md. The recorded execution context is bits-lab; the genuine lab screenshot and checked execution logs accompany the final report.
 
 ### References
 

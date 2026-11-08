@@ -1,12 +1,16 @@
 # Run, review and deploy
 
-This is a locally prepared working implementation. The official brief permits AI for learning support and disallows direct copy-paste submissions. Review the code, explain the choices, make your own justified changes, and execute your assessed work in BITS Virtual Lab. Do not fabricate execution evidence or commit history.
+This project was executed in BITS Virtual Lab on 8 November 2026 and deployed to Streamlit Community Cloud. The official brief permits AI for learning support and disallows direct copy-paste submissions. Review the code, explain the choices, make your own justified changes, and execute your assessed work in BITS Virtual Lab. Do not fabricate execution evidence or commit history.
+
+Live app: https://dinudante-dry-bean-classifier.streamlit.app
+
+Public personal repository: https://github.com/DinuDante/dry-bean-classifier
 
 ## 1. Files to keep together
 
 Keep app.py, ml_core.py, train.py, requirements.txt, README.md, test_data.csv, model/, data/ and results/ in the same project folder. Saved models include their fitted preprocessing. requirements-report.txt and the two build scripts produce the report; verify_project.py checks the experiment and app.
 
-The included results/training.log and execution_summary.json are actual local Windows execution records. They are not lab evidence.
+The current results/training.log and execution_summary.json record actual BITS Lab execution on Linux with Python 3.12.7. results/lab_verification.log records seven passing checks; results/lab_dependency_check.log records a successful dependency check. Original local results remain in Git history.
 
 ## 2. Run locally or in the lab
 
@@ -15,7 +19,7 @@ Use Python 3.12. From the project folder in a terminal:
 ```text
 python -m pip install -r requirements.txt
 python train.py
-python build_readme.py
+python build_readme.py --github-url https://github.com/DinuDante/dry-bean-classifier --app-url https://dinudante-dry-bean-classifier.streamlit.app
 python verify_project.py
 python -m streamlit run app.py
 ```
@@ -65,7 +69,7 @@ Install the report dependencies:
 python -m pip install -r requirements-report.txt
 ```
 
-The included review copy was produced with python build_submission.py --draft. It is explicitly incomplete and must not be submitted.
+The earlier private review copy was produced with python build_submission.py --draft. Use the completed final PDF for submission; the earlier review copy is a historical preparation artifact.
 
 After the lab run, GitHub publication and deployment, run the following as one command (replace all three example values):
 

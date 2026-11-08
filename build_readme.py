@@ -20,7 +20,7 @@ def markdown_table(headers, rows):
                      ["| " + " | ".join(map(str, row)) + " |" for row in rows])
 
 
-def build(repository_url=None):
+def build(repository_url=None, app_url=None):
     summary = json.loads((ROOT / "results/execution_summary.json").read_text())
     scores = pd.read_csv(ROOT / "results/metrics.csv").set_index("ML Model Name")
     val = pd.read_csv(ROOT / "results/validation_metrics.csv").set_index("ML Model Name")
@@ -70,6 +70,8 @@ StandardScaler is fitted inside the training pipeline for Logistic Regression, K
 
 {link}
 
+{('[Live Streamlit app](' + app_url + ')') if app_url else ''}
+
 ## d. Models used
 
 Fixed settings were chosen before evaluation; no test-set hyperparameter search was performed.
@@ -98,7 +100,7 @@ Use Python 3.12. Install requirements.txt, run train.py to reproduce training, a
 
 The uploaded CSV must contain exactly the 16 feature columns and Class, numeric finite inputs, and known uppercase labels. Column order may vary. Upload only test data (up to 5,000 rows / 5 MiB). If a class is absent, seven-class AUC is displayed as N/A; macro metrics still include all seven labels. The bundled test set contains every class.
 
-Detailed local, BITS Lab and Community Cloud steps are in RUN_GUIDE.md. The recorded execution context is {summary['execution_context_operator_declared']}; a local run is not BITS Lab evidence.
+Detailed local, BITS Lab and Community Cloud steps are in RUN_GUIDE.md. The recorded execution context is {summary['execution_context_operator_declared']}; the genuine lab screenshot and checked execution logs accompany the final report.
 
 ### References
 
@@ -111,5 +113,6 @@ Detailed local, BITS Lab and Community Cloud steps are in RUN_GUIDE.md. The reco
 if __name__=="__main__":
     parser=argparse.ArgumentParser()
     parser.add_argument("--github-url")
+    parser.add_argument("--app-url")
     args=parser.parse_args()
-    print(build(args.github_url))
+    print(build(args.github_url, args.app_url))

@@ -1,4 +1,4 @@
-Execution context (operator declared): local; host platform: Windows
+Execution context (operator declared): bits-lab; host platform: Linux
 Original 13611; removed duplicates 68; retained 13543
 Train 8125; validation 2709; held-out test 2709; features 16
 Validation Logistic Regression: macro F1=0.938212

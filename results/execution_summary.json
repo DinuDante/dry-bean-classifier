@@ -1,8 +1,8 @@
 {
-  "executed_at_utc": "2026-11-04T06:55:43.042869+00:00",
-  "execution_context_operator_declared": "local",
-  "platform": "Windows-11-10.0.26300-SP0",
-  "python": "3.12.10",
+  "executed_at_utc": "2026-11-08T08:15:48.718990+00:00",
+  "execution_context_operator_declared": "bits-lab",
+  "platform": "Linux-5.14.0-503.14.1.el9_5.x86_64-x86_64-with-glibc2.34",
+  "python": "3.12.7",
   "versions": {
     "numpy": "2.5.4",
     "pandas": "3.1.0",
@@ -44,11 +44,11 @@
   "test_csv_sha256": "bfbee70a408cf9137f8676f4c582b6d880153729e7e2e6213e6e48aec2ab503a",
   "source_csv_sha256": "53bc1eb01fdaf11e42482c52d51c33522784870d584b1f03c651c2d20225d2cc",
   "model_sha256": {
-    "Logistic Regression": "882359b13453a5d136d25235b71fd7184a30a62fa50ff0a0bbf5df6255c75373",
-    "Decision Tree": "29c6e375978dde8c4c800eb39329d0ba4fa0bf0ae83bd53dd0ee476e86a238fe",
+    "Logistic Regression": "712b538cb0c58b21bb5e2d8c945beab7a31b8c90e72eb2ef7ebcd2ec246d344d",
+    "Decision Tree": "addacbab93ab941c3c5bac1c9edb3ae97725d19d4dd366fbd1689a6efe587e19",
     "KNN": "3b8fa00b714ec1f5f1935654dae1228b94e2aa6de8fd9545487b6cfe40c61875",
     "Naive Bayes": "0684d3e213aefdd467495600f661eef22d0c4163cd5a2db1044170157b03116c",
-    "Support Vector Machine": "d223fd8a47900275210aa6c79be61c2be0c03ac3224e9f7d0cf02c59ba186c13"
+    "Support Vector Machine": "10ae26837077bdac78627ea565cce1d0d72deb0e4707b0bb1d931ba4fc34dcdc"
   },
   "class_order": [
     "BARBUNYA",

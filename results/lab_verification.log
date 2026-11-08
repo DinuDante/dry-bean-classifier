@@ -1,0 +1,25 @@
+test_bad_upload_is_shown_as_error_without_traceback (__main__.ProjectChecks.test_bad_upload_is_shown_as_error_without_traceback) ... 2026-11-08 13:46:01.807 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_data_partition_is_disjoint_and_excludes_duplicate_measurements (__main__.ProjectChecks.test_data_partition_is_disjoint_and_excludes_duplicate_measurements) ... ok
+test_incomplete_class_upload_keeps_defined_metrics_and_marks_auc_unavailable (__main__.ProjectChecks.test_incomplete_class_upload_keeps_defined_metrics_and_marks_auc_unavailable) ... /home/s2026aj05692/workspace/.ml_assignment2_env_2026/lib/python3.12/site-packages/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/s2026aj05692/workspace/.ml_assignment2_env_2026/lib/python3.12/site-packages/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/s2026aj05692/workspace/.ml_assignment2_env_2026/lib/python3.12/site-packages/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/s2026aj05692/workspace/.ml_assignment2_env_2026/lib/python3.12/site-packages/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/s2026aj05692/workspace/.ml_assignment2_env_2026/lib/python3.12/site-packages/sklearn/metrics/_classification.py:614: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+ok
+test_saved_models_reproduce_all_reported_metrics (__main__.ProjectChecks.test_saved_models_reproduce_all_reported_metrics) ... ok
+test_ui_all_models_and_upload_mode_never_fit (__main__.ProjectChecks.test_ui_all_models_and_upload_mode_never_fit) ... 2026-11-08 13:46:11.809 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_upload_validation_and_column_reordering (__main__.ProjectChecks.test_upload_validation_and_column_reordering) ... ok
+test_valid_upload_runs_all_models_without_fitting (__main__.ProjectChecks.test_valid_upload_runs_all_models_without_fitting) ... 2026-11-08 13:46:17.779 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 21.700s
+
+OK

@@ -46,7 +46,7 @@ def main():
         execution=json.loads((ROOT/"results/execution_summary.json").read_text())
         if execution["execution_context_operator_declared"]!="bits-lab":
             parser.error("Run train.py --execution-context bits-lab in the actual BITS lab first, then copy its results back.")
-    readme=build(args.github_url)
+    readme=build(args.github_url,args.app_url)
     output=args.output or ROOT/"output/pdf"/("2026AJ05692_ML_Assignment2_REVIEW.pdf" if args.draft else "2026AJ05692_ML_Assignment2.pdf")
     output.parent.mkdir(parents=True,exist_ok=True)
     styles=getSampleStyleSheet()

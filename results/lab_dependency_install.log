@@ -1,0 +1,167 @@
+Collecting streamlit==1.66.1 (from -r requirements.txt (line 1))
+  Downloading streamlit-1.66.1-py3-none-any.whl.metadata (10 kB)
+Collecting scikit-learn==1.9.1 (from -r requirements.txt (line 2))
+  Downloading scikit_learn-1.9.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.3 kB)
+Collecting numpy==2.5.4 (from -r requirements.txt (line 3))
+  Downloading numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting pandas==3.1.0 (from -r requirements.txt (line 4))
+  Downloading pandas-3.1.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (18 kB)
+Collecting scipy==1.18.1 (from -r requirements.txt (line 5))
+  Downloading scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting matplotlib==3.11.2 (from -r requirements.txt (line 6))
+  Downloading matplotlib-3.11.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+Collecting joblib==1.6.0 (from -r requirements.txt (line 7))
+  Downloading joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting altair!=5.4.0,!=5.4.1,<7,>=5.0.0 (from streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading altair-6.3.0-py3-none-any.whl.metadata (11 kB)
+Collecting click<9,>=7.0 (from streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading click-8.5.1-py3-none-any.whl.metadata (2.6 kB)
+Collecting packaging>=20 (from streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pillow<14,>=9.2.0 (from streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pydeck<1,>=0.8.0b4 (from streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading pydeck-0.9.3-py2.py3-none-any.whl.metadata (4.2 kB)
+Collecting protobuf<8,>=5.26.1 (from streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)
+Collecting pyarrow!=25.0.0,<27,>=10.0.1 (from streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading pyarrow-26.0.1-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (3.0 kB)
+Collecting requests<3,>=2.27 (from streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting typing-extensions<5,>=4.10.0 (from streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting starlette<2,>=0.46.0 (from streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading starlette-1.10.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting uvicorn<1,>=0.30.0 (from streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting anyio<5,>=4.0.0 (from streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+Collecting python-multipart<1,>=0.0.10 (from streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading python_multipart-0.0.33-py3-none-any.whl.metadata (6.3 kB)
+Collecting websockets<18,>=12.0.0 (from streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading websockets-17.4-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+Collecting itsdangerous<3,>=2.1.2 (from streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting watchdog<7,>=2.1.5 (from streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl.metadata (44 kB)
+Collecting narwhals>=2.0.1 (from scikit-learn==1.9.1->-r requirements.txt (line 2))
+  Downloading narwhals-2.28.0-py3-none-any.whl.metadata (15 kB)
+Collecting threadpoolctl>=3.5.0 (from scikit-learn==1.9.1->-r requirements.txt (line 2))
+  Downloading threadpoolctl-3.8.0-py3-none-any.whl.metadata (29 kB)
+Collecting python-dateutil>=2.9.0 (from pandas==3.1.0->-r requirements.txt (line 4))
+  Downloading python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting contourpy>=1.0.1 (from matplotlib==3.11.2->-r requirements.txt (line 6))
+  Downloading contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+Collecting cycler>=0.10 (from matplotlib==3.11.2->-r requirements.txt (line 6))
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.28.2 (from matplotlib==3.11.2->-r requirements.txt (line 6))
+  Downloading fonttools-4.68.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (139 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib==3.11.2->-r requirements.txt (line 6))
+  Downloading kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+Collecting pyparsing>=3 (from matplotlib==3.11.2->-r requirements.txt (line 6))
+  Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting cloudpickle>=3.0 (from joblib==1.6.0->-r requirements.txt (line 7))
+  Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Collecting jinja2 (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting jsonschema>=3.0 (from altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting idna>=2.8 (from anyio<5,>=4.0.0->streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting tzdata (from python-dateutil>=2.9.0->pandas==3.1.0->-r requirements.txt (line 4))
+  Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting charset_normalizer<4,>=2 (from requests<3,>=2.27->streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+Collecting urllib3<3,>=1.26 (from requests<3,>=2.27->streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests<3,>=2.27->streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+Collecting h11>=0.8 (from uvicorn<1,>=0.30.0->streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting attrs>=22.2.0 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.25.0 (from jsonschema>=3.0->altair!=5.4.0,!=5.4.1,<7,>=5.0.0->streamlit==1.66.1->-r requirements.txt (line 1))
+  Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Downloading streamlit-1.66.1-py3-none-any.whl (10.4 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/10.4 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m10.4/10.4 MB[0m [31m123.7 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading scikit_learn-1.9.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.2 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/9.2 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m9.2/9.2 MB[0m [31m124.2 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/16.7 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m16.7/16.7 MB[0m [31m134.3 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading pandas-3.1.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.0 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/12.0 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m12.0/12.0 MB[0m [31m138.8 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/35.3 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m35.1/35.3 MB[0m [31m231.9 MB/s[0m eta [36m0:00:01[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m35.3/35.3 MB[0m [31m131.2 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading matplotlib-3.11.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/9.9 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m9.9/9.9 MB[0m [31m117.8 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading joblib-1.6.0-py3-none-any.whl (306 kB)
+Downloading altair-6.3.0-py3-none-any.whl (797 kB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/797.2 kB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m797.2/797.2 kB[0m [31m53.8 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading anyio-4.16.0-py3-none-any.whl (134 kB)
+Downloading click-8.5.1-py3-none-any.whl (126 kB)
+Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Downloading contourpy-1.4.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (383 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.68.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/5.4 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m5.4/5.4 MB[0m [31m95.7 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Downloading kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.5 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.5/1.5 MB[0m [31m95.9 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading narwhals-2.28.0-py3-none-any.whl (490 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/7.1 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m7.1/7.1 MB[0m [31m135.6 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl (343 kB)
+Downloading pyarrow-26.0.1-cp312-cp312-manylinux_2_28_x86_64.whl (55.0 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/55.0 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m[90m━━━━━━━━━━━━━━━[0m [32m33.3/55.0 MB[0m [31m166.5 MB/s[0m eta [36m0:00:01[0m
+[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m54.8/55.0 MB[0m [31m181.7 MB/s[0m eta [36m0:00:01[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m55.0/55.0 MB[0m [31m122.3 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading pydeck-0.9.3-py2.py3-none-any.whl (11.4 MB)
+[?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/11.4 MB[0m [31m?[0m eta [36m-:--:--[0m
+[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m11.4/11.4 MB[0m [31m133.1 MB/s[0m eta [36m0:00:00[0m
+[?25hDownloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Downloading python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+Downloading python_multipart-0.0.33-py3-none-any.whl (32 kB)
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading starlette-1.10.0-py3-none-any.whl (80 kB)
+Downloading threadpoolctl-3.8.0-py3-none-any.whl (32 kB)
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl (79 kB)
+Downloading websockets-17.4-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (226 kB)
+Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Downloading idna-3.20-py3-none-any.whl (69 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+Installing collected packages: websockets, watchdog, urllib3, tzdata, typing-extensions, threadpoolctl, rpds-py, python-multipart, pyparsing, pyarrow, protobuf, pillow, packaging, numpy, narwhals, MarkupSafe, kiwisolver, itsdangerous, idna, h11, fonttools, cycler, cloudpickle, click, charset_normalizer, certifi, attrs, uvicorn, scipy, requests, referencing, python-dateutil, joblib, jinja2, contourpy, anyio, starlette, scikit-learn, pydeck, pandas, matplotlib, jsonschema-specifications, jsonschema, altair, streamlit
+Successfully installed MarkupSafe-3.0.4 altair-6.3.0 anyio-4.16.0 attrs-26.1.0 certifi-2026.10.23 charset_normalizer-3.5.2 click-8.5.1 cloudpickle-3.1.2 contourpy-1.4.0 cycler-0.12.1 fonttools-4.68.0 h11-0.16.0 idna-3.20 itsdangerous-2.2.0 jinja2-3.1.6 joblib-1.6.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 kiwisolver-1.5.1 matplotlib-3.11.2 narwhals-2.28.0 numpy-2.5.4 packaging-26.3 pandas-3.1.0 pillow-13.0.0 protobuf-7.36.2 pyarrow-26.0.1 pydeck-0.9.3 pyparsing-3.3.3 python-dateutil-4.0.0 python-multipart-0.0.33 referencing-0.37.0 requests-2.34.2 rpds-py-2026.9.1 scikit-learn-1.9.1 scipy-1.18.1 starlette-1.10.0 streamlit-1.66.1 threadpoolctl-3.8.0 typing-extensions-4.16.0 tzdata-2026.6 urllib3-2.8.0 uvicorn-0.54.0 watchdog-6.0.0 websockets-17.4
+
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m24.2[0m[39;49m -> [0m[32;49m26.3[0m
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49m/home/s2026aj05692/workspace/.ml_assignment2_env_2026/bin/python -m pip install --upgrade pip[0m

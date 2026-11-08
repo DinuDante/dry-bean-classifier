@@ -14,9 +14,52 @@ from reportlab.lib.utils import ImageReader
 from reportlab.lib.pagesizes import A4
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, Image, PageBreak
 from pypdf import PdfReader
+from PIL import Image as PillowImage
 
 from ml_core import ROOT
 from build_readme import build, github_url
+
+
+class EvidenceImage(Image):
+    """Keep the source capture intact and optionally cover a pointer in empty UI chrome."""
+
+    def __init__(self, filename, width, height, cursor_box=None, background_column=None):
+        super().__init__(filename, width=width, height=height)
+        self.pointer_rows = []
+        if cursor_box is None:
+            return
+        left, top, box_width, box_height = cursor_box
+        with PillowImage.open(filename) as source:
+            source = source.convert("RGB")
+            source_width, source_height = source.size
+            if not (0 <= left < left + box_width <= source_width
+                    and 0 <= top < top + box_height <= source_height
+                    and background_column is not None
+                    and 0 <= background_column < source_width):
+                raise ValueError("Cursor box and reference column must be inside the screenshot.")
+            self.pointer_scale = width / source_width
+            self.pointer_left, self.pointer_width = left, box_width
+            # Sample an unobstructed column of the same empty horizontal toolbar.
+            for row in range(top, top + box_height):
+                color = source.getpixel((background_column, row))
+                if self.pointer_rows and self.pointer_rows[-1][2] == color:
+                    self.pointer_rows[-1][1] += 1
+                else:
+                    self.pointer_rows.append([row, 1, color])
+
+    def draw(self):
+        super().draw()
+        if not self.pointer_rows:
+            return
+        self.canv.saveState()
+        scale = self.pointer_scale
+        for row, count, color in self.pointer_rows:
+            self.canv.setFillColorRGB(*(component / 255 for component in color))
+            self.canv.rect(self.pointer_left * scale,
+                           self.drawHeight - (row + count) * scale,
+                           self.pointer_width * scale, count * scale + 0.001,
+                           stroke=0, fill=1)
+        self.canv.restoreState()
 
 
 def inline(text):
@@ -32,6 +75,10 @@ def main():
     parser.add_argument("--github-url")
     parser.add_argument("--app-url")
     parser.add_argument("--lab-screenshot",type=Path)
+    parser.add_argument("--cursor-box", type=int, nargs=4, metavar=("X", "Y", "WIDTH", "HEIGHT"),
+                        help="Optional pointer-only box in source pixels, within empty horizontal UI chrome.")
+    parser.add_argument("--cursor-background-column", type=int,
+                        help="Unobstructed background column used for the PDF pointer cover.")
     parser.add_argument("--output",type=Path)
     args=parser.parse_args()
     if not args.draft:
@@ -72,7 +119,9 @@ def main():
     if args.lab_screenshot:
         width,height=ImageReader(str(args.lab_screenshot)).getSize()
         scale=min(480/width,380/height)
-        story.append(Image(str(args.lab_screenshot),width=width*scale,height=height*scale))
+        story.append(EvidenceImage(str(args.lab_screenshot), width=width*scale, height=height*scale,
+                                   cursor_box=args.cursor_box,
+                                   background_column=args.cursor_background_column))
     else:
         story.append(Paragraph("Pending. Local execution output is not BITS Virtual Lab proof. Insert one genuine screenshot of assignment execution in the lab.",body))
     story.append(PageBreak())

@@ -1,6 +1,6 @@
 # Run, review and deploy
 
-This project was executed in BITS Virtual Lab on 8 November 2026 and deployed to Streamlit Community Cloud. The official brief permits AI for learning support and disallows direct copy-paste submissions. Review the code, explain the choices, make your own justified changes, and execute your assessed work in BITS Virtual Lab. Do not fabricate execution evidence or commit history.
+This project was executed in BITS Virtual Lab on 8 November 2026 and deployed to Streamlit Community Cloud. Review the code and understand the experimental choices before submission.
 
 Live app: https://dinudante-dry-bean-classifier.streamlit.app
 

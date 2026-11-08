@@ -1,0 +1,11 @@
+{
+  "dataset": "UCI Dry Bean, dataset 602",
+  "source_url": "https://archive.ics.uci.edu/static/public/602/dry%2Bbean%2Bdataset.zip",
+  "citation": "Dry Bean [Dataset]. (2020). UCI Machine Learning Repository. https://doi.org/10.24432/C50S4B",
+  "license": "CC BY 4.0",
+  "downloaded_at_utc": "2026-11-04T06:55:37.635833+00:00",
+  "archive_sha256": "0a64eff5be87f48c3dbbfc0a12a56c5d5b5167ef8e61cd45d69b3e7c7130c06f",
+  "arff_member": "DryBeanDataset/Dry_Bean_Dataset.arff",
+  "arff_sha256": "b2a4a76a2aedfb8ed415adfc1bfc70b5f202cb00cb72e500766e364c14834014",
+  "csv_sha256": "53bc1eb01fdaf11e42482c52d51c33522784870d584b1f03c651c2d20225d2cc"
+}

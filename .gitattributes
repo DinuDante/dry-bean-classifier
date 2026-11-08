@@ -1,0 +1,10 @@
+# Keep dataset checksums stable across Windows and Linux checkouts.
+* text=auto
+*.csv text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.toml text eol=lf
+*.joblib binary
+*.pdf binary

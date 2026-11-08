@@ -1,0 +1,16 @@
+Execution context (operator declared): local; host platform: Windows
+Original 13611; removed duplicates 68; retained 13543
+Train 8125; validation 2709; held-out test 2709; features 16
+Validation Logistic Regression: macro F1=0.938212
+Validation Decision Tree: macro F1=0.917508
+Validation KNN: macro F1=0.933367
+Validation Naive Bayes: macro F1=0.912529
+Validation Support Vector Machine: macro F1=0.939546
+Model selected using validation macro F1, before test evaluation: Support Vector Machine
+         ML Model Name  Accuracy      AUC  Precision   Recall       F1      MCC
+   Logistic Regression  0.924326 0.994937   0.938412 0.935151 0.936518 0.908499
+         Decision Tree  0.901440 0.964221   0.914496 0.913122 0.913751 0.880761
+                   KNN  0.929125 0.987689   0.942946 0.938397 0.940504 0.914236
+           Naive Bayes  0.898856 0.990860   0.909911 0.910458 0.909756 0.878022
+Support Vector Machine  0.932817 0.995907   0.946108 0.941843 0.943866 0.918699
+COMPLETE: five saved pipelines and held-out metrics written. No uploaded CSV was used for training.
